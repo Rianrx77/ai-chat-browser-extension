@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      width: 340px;
+      padding: 12px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
+      background: #0f172a;   /* dark blue */
+      color: #e5e7eb;        /* light text */
+    }
+
+    h3 {
+      margin-top: 0;
+      text-align: center;
+      color: #38bdf8;        /* cyan accent */
+    }
+
+    input, textarea {
+      width: 100%;
+      box-sizing: border-box;
+      background: #020617;
+      color: #e5e7eb;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      padding: 8px;
+      margin-top: 6px;
+      font-size: 13px;
+    }
+
+    textarea {
+      resize: none;
+      height: 70px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 8px;
+      background: #38bdf8;
+      color: #020617;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #334155;
+      margin: 12px 0;
+    }
+
+    #status {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-top: 6px;
+      text-align: center;
+    }
+
+    #response {
+      margin-top: 10px;
+      background: #020617;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      padding: 8px;
+      min-height: 70px;
+      font-size: 13px;
+      white-space: pre-wrap;
+      overflow-y: auto;
+      max-height: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Groq Chatbot</h3>
+
+  <input id="apiKey" type="password" placeholder="Enter Groq API Key" />
+  <button id="saveKey">Save API Key</button>
+
+  <hr>
+
+  <textarea id="input" placeholder="Ask me anything..."></textarea>
+  <button id="send">Send</button>
+
+  <div id="status"></div>
+  <div id="response">Response will appear here...</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

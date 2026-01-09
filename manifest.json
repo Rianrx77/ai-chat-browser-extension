@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Groq Data Engineering Assistant",
+  "version": "1.0",
+  "description": "Chat with a data engineering LLM using Groq",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://api.groq.com/*"
+  ]
+}
